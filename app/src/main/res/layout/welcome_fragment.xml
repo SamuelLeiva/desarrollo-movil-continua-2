@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcomeBackgroundColor"
+    tools:context=".WelcomeFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp"
+        >
+
+        <!-- Texto grande -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:textSize="32sp"
+            android:text="Everything you need for your home office"
+            android:textAppearance="@style/TextAppearance.WHFShop.WelcomeHeader"
+        />
+        <!-- Parrafo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:text="Improve your work from home experience with our vast selection of amazing
+                    tools to help you work like a professional."
+            android:textAppearance="@style/TextAppearance.WHFShop.WelcomeParagraph"
+            />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/explore_button"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="@string/explore_button"
+                android:layout_marginRight="15dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/log_button"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="@string/log_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+        </LinearLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/explore_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore_button"
+
+                />
+            &lt;!&ndash; android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" &ndash;&gt;
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/log_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/log_button"
+
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+            &lt;!&ndash;android:layout_toEndOf="@+id/explore_button"
+            android:layout_toRightOf="@+id/explore_button"&ndash;&gt;
+        </RelativeLayout>-->
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="420dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/welcome"
+            android:contentDescription="Gerente"
+            android:scaleType="fitEnd"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

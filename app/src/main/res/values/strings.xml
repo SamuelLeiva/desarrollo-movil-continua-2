@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WHF_Shop</string>
+    <string name="explore_button">Explore</string>
+    <string name="log_button">or Log in</string>
+</resources>
