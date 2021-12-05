@@ -105,7 +105,23 @@
 
             </LinearLayout>
 
-            <HorizontalScrollView
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:layout_behavior="Product"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.core.widget.NestedScrollView>
+
+            <!--<HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fillViewport="true"
@@ -153,7 +169,7 @@
                         />
 
                 </LinearLayout>
-            </HorizontalScrollView>
+            </HorizontalScrollView>-->
 
             <TextView
                 android:layout_width="match_parent"
