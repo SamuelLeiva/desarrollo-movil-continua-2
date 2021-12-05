@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Airpods Max",
+    "url": "https://images.unsplash.com/photo-1605464315542-bda3e2f4e605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "price": "$499",
+    "discount": "20%"
+  },
+  {
+    "title": "Mx Master 3",
+    "url": "https://images.unsplash.com/photo-1593108408993-58ee9c7825c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "price": "$99",
+    "discount": "24%"
+  },
+  {
+    "title": "Keyboard Basic",
+    "url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=865&q=80",
+    "price": "$60",
+    "discount": "30%"
+  }
+]

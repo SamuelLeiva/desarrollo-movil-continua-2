@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.WHF_Shop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/bluePrimary</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -14,6 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Widget.WHFShop.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorOnPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
     <style name="TextAppearance.WHFShop.WelcomeHeader" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
@@ -21,5 +27,16 @@
     <style name="TextAppearance.WHFShop.WelcomeParagraph" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="Widget.CoolStuff.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.WHFShop.TextInputLayout.HintText</item>
+        <item name="hintTextColor">?attr/colorSecondary</item>
+        <item name="android:paddingBottom">8dp</item>
+
+        <item name="boxStrokeColor">@color/purple_500</item>
+    </style>
+    <style name="TextAppearance.WHFShop.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 </resources>
