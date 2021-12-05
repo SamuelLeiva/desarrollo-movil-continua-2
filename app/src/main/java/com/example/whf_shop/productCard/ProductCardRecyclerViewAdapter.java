@@ -1,4 +1,4 @@
-package com.example.whf_shop;
+package com.example.whf_shop.productCard;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.whf_shop.R;
 import com.example.whf_shop.network.ImageRequest;
 import com.example.whf_shop.network.ProductEntry;
 
@@ -16,7 +17,7 @@ public class ProductCardRecyclerViewAdapter extends RecyclerView.Adapter<Product
     private List<ProductEntry> productList;
     private ImageRequest imageRequest;
 
-    ProductCardRecyclerViewAdapter(List<ProductEntry> productList){
+    public ProductCardRecyclerViewAdapter(List<ProductEntry> productList){
         this.productList = productList;
         imageRequest = ImageRequest.getInstance();
     }

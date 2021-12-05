@@ -1,17 +1,17 @@
 [
   {
     "title": "Mice",
-    "url": "@drawable/mouse",
-    "qty": "18"
+    "url": "https://image.flaticon.com/icons/png/512/88/88221.png",
+    "qty": "18 new"
   },
   {
     "title": "Keyboards",
-    "url": "",
-    "qty": "15"
+    "url": "https://cdn.icon-icons.com/icons2/38/PNG/512/keyboard_5643.png",
+    "qty": "15 new"
   },
   {
     "title": "Airpods",
-    "url": "",
-    "qty": "9"
+    "url": "https://cdn1.iconfinder.com/data/icons/computer-hardware-8/128/Headphones-512.png",
+    "qty": "9 new"
   }
 ]

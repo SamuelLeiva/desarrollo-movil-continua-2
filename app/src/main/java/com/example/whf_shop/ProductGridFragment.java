@@ -14,7 +14,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.whf_shop.categoryCard.CategoryCardRecyclerViewAdapter;
+import com.example.whf_shop.network.CategoryEntry;
 import com.example.whf_shop.network.ProductEntry;
+import com.example.whf_shop.productCard.ProductCardRecyclerViewAdapter;
 
 public class ProductGridFragment extends Fragment {
 
@@ -37,6 +40,7 @@ public class ProductGridFragment extends Fragment {
 
         setUpToolbar(view);
 
+        //1er scroll de productos
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view_product);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1, GridLayoutManager.HORIZONTAL, false));
@@ -44,6 +48,14 @@ public class ProductGridFragment extends Fragment {
                 ProductEntry.initProductEntryList(getResources()));
         recyclerView.setAdapter(adapter);
         //recyclerView.addItemDecoration(new Prod);
+
+        //2o scroll de categorias
+        RecyclerView recyclerViewCat = view.findViewById(R.id.recycler_view_category);
+        recyclerViewCat.setHasFixedSize(true);
+        recyclerViewCat.setLayoutManager(new GridLayoutManager(getContext(), 1, GridLayoutManager.HORIZONTAL, false));
+        CategoryCardRecyclerViewAdapter catAdapter = new CategoryCardRecyclerViewAdapter(
+                CategoryEntry.initCategoryEntryList(getResources()));
+        recyclerViewCat.setAdapter(catAdapter);
 
         return view;
     }
